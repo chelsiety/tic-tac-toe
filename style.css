@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+/* || CSS RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+/* || VARIABLES */
+:root {
+    --background-color: #1A2B33;
+    --font-text-color: #FFFFFF;
+    --tile-border-color: #A9BEC8;
+    --tile-background-color: #1A2B33;
+    --button-background-color: #F2B138;
+    --button-hover-background-color:#ef9d06;
+    --button-color: #1A2B33;
+    --player-X-color: #34C3BE;
+    --player-O-color: #F2B138;
+    --font-XO-symbol: 'Varela Round', sans-serif;
+    --font-text: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-text-color);
+    font-family: var(--font-text);
+    line-height: 1.6;
+}
+
+h1 {
+    line-height: 1.2;
+}
+
+button {
+    font: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+/* HEADER */
+
+.header {
+    padding: 20px;
+    margin-bottom: 3px;
+}
+
+.title {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+/* MAIN */
+
+.main {
+    padding: 0 20px;
+}
+
+.game-turn {
+    padding: 20px 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 454px;
+    height: 454px;
+    margin: 0px auto 10px;
+}
+
+.tile {
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--tile-border-color);
+    background-color: var(--tile-background-color);
+    font-size: 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.playerX {
+    color: var(--player-X-color);
+}
+
+.playerO {
+    color: var(--player-O-color);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    padding: 30px
+}
+.restart-button {
+    font-size: 2rem;
+    padding: .25em .5em;
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    border-radius: 5px;
+}
+
+.restart-button:hover {
+    background-color: var(--button-hover-background-color);
+}
