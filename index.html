@@ -12,6 +12,28 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="title">Tic Tac Toe</h1>
+    </header>
+    <main class="main">
+        <div class="display game-turn">
+            Player <span class="display-player playerX">X</span>'s turn
+        </div>
+        <div class="display game-result hide" id="gameResult"></div>
+        <div class="gameboard" id="gameboard">
+            <div class="tile" data-index="0"></div>
+            <div class="tile" data-index="1"></div>
+            <div class="tile" data-index="2"></div>
+            <div class="tile" data-index="3"></div>
+            <div class="tile" data-index="4"></div>
+            <div class="tile" data-index="5"></div>
+            <div class="tile" data-index="6"></div>
+            <div class="tile" data-index="7"></div>
+            <div class="tile" data-index="8"></div>
+        </div>
+        <div class="controls">
+            <button class="restart-button" id="restartButton"></button>
+        </div>
+    </main>
 </body>
 </html>
